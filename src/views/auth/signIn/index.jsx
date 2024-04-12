@@ -66,7 +66,7 @@ function SignIn() {
 
     try {
       const response = await fetch(
-        "http://localhost:4200/api/login",
+        "http://54.147.242.114:4200/api/login",
         requestOptions
       );
 

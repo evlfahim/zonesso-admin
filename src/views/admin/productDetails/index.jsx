@@ -11,7 +11,7 @@ const Overview = () => {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    fetch(`http://localhost:4200/api/get/product/${productId}`, {
+    fetch(`http://54.147.242.114:4200/api/get/product/${productId}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

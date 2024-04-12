@@ -12,7 +12,7 @@ const UserDetails = () => {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    fetch(`http://localhost:4200/api/get/user/${id}`, {
+    fetch(`http://54.147.242.114:4200/api/get/user/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

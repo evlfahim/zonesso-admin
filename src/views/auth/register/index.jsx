@@ -74,7 +74,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://localhost:4200/api/register",
+        "http://54.147.242.114:4200/api/register",
         requestOptions
       );
 

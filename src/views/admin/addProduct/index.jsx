@@ -29,7 +29,7 @@ export default function Overview() {
   const productId = product.id;
   useEffect(() => {
     if (productId) {
-      fetch(`http://localhost:4200/api/get/product/${productId}`, {
+      fetch(`http://54.147.242.114:4200/api/get/product/${productId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -91,7 +91,7 @@ export default function Overview() {
     let method;
 
     if (window.location.href.split("/admin")[1] === "/add-product") {
-      url = "http://localhost:4200/api/create/products";
+      url = "http://54.147.242.114:4200/api/create/products";
       method = "POST";
     } else {
       url = `http://localhost:4200/update/product/${productId}`;
